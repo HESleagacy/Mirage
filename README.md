@@ -1,18 +1,11 @@
 # MIRAGE  
 ### Time-Stateful Security Layer for ML APIs
----
-## DEMO VIDEO - https://drive.google.com/file/d/1nd1Mc3NoNcCINhS5dtgKjeMDjclJ1ZFP/view?usp=sharing
-## PROJECT VIDEO - https://drive.google.com/file/d/1sDLjvOwKT6zfthwek38ZdiXop2MIUE9a/view?usp=sharing
-## PPT - https://www.canva.com/design/DAG9oPDg2DM/J2dt124nAJQgHbLA_AnEAw/edit
----
 Mirage is a **state-aware security wrapper** designed to protect high-value ML APIs from **model extraction, gradient-based attacks, and adversarial probing**.  
 Unlike stateless rate-limiters or firewalls, Mirage **tracks users over time**, adapts its responses, and escalates defenses based on behavioral intent.
 
 Think of it as a security system that remembers you.
 
-
-
-## 🚀 Why Mirage Exists
+##  Why Mirage Exists
 
 Modern ML APIs leak value silently.  
 Attackers don’t break in. They **ask politely, repeatedly, and systematically**.
@@ -27,7 +20,7 @@ Instead of denying access, it **poisons the attacker’s data** while preserving
 
 ---
 
-## 🧠 Core Idea: Time-Stateful Defense
+##  Core Idea: Time-Stateful Defense
 
 Mirage introduces **time as a first-class security signal**.
 
@@ -40,7 +33,7 @@ Based on this, Mirage escalates users through **three defense tiers**.
 
 ---
 
-## 🛡️ The 3-Tier Defense Model
+##  The 3-Tier Defense Model
 
 | Tier | Status      | Trigger Condition | Goal        | Defense Action |
 |-----:|-------------|------------------|-------------|----------------|
@@ -53,7 +46,7 @@ Attackers still receive outputs — but the **data they collect becomes mathemat
 
 ---
 
-## 📊 Threat Scoring Engine
+##  Threat Scoring Engine
 
 Mirage computes a **hybrid threat score** in real time.
 
